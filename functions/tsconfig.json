@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext", // Update this to 'NodeNext'
+    "target": "es2017",
+    "lib": ["es2017", "es6"],
+    "moduleResolution": "NodeNext", // Ensure this matches the 'module' setting
+    "sourceMap": true,
+    "outDir": "lib",
+    "rootDir": "src",
+    "strict": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"]
+}
