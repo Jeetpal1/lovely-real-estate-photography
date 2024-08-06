@@ -7,7 +7,7 @@ import { selectedPricingPlanState } from "../../state/atoms";
 import {
   Booking,
   PaymentDetails,
-  PricingPlan,
+  // PricingPlan,
   PropertyDetails,
 } from "../../types";
 import { useAuth } from "../hooks/useAuth";
