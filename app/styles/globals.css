@@ -4,4 +4,20 @@
 
 body {
   @apply bg-background text-text;
+
+  /* custom-calendar.css */
+  .react-calendar__tile--active {
+    background: #fbb42f !important;
+    color: black !important;
+  }
+
+  .react-calendar__tile--active:hover,
+  .react-calendar__tile--active:focus {
+    background: #fbb42f !important;
+    color: black !important;
+  }
+
+  .react-calendar__tile--now {
+    background: rgb(228, 222, 222) !important;
+  }
 }

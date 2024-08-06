@@ -1,4 +1,5 @@
 // types/index.ts
+
 // User type representing authenticated users
 export interface User {
   uid: string;
@@ -21,15 +22,15 @@ export interface PropertyDetails {
   unitNumber?: string;
   propertyType: string;
   over4000: boolean;
-  visitorParking: boolean;
   lockbox: string;
   realtor: boolean;
   referral: string;
   specialInstructions: string;
 }
 
+// Booking type representing a booking made by a user
 export interface Booking {
-  id: string;
+  id?: string;
   userId: string;
   userEmail: string;
   propertyDetails: PropertyDetails;
@@ -38,9 +39,16 @@ export interface Booking {
   phone: string;
   email: string;
   paymentDetails: PaymentDetails;
-  timeSlot: Date;
+  timeSlot: string; // Changed from Date to string
   status: "pending" | "confirmed" | "completed";
   paymentStatus: "unpaid" | "paid";
   createdAt: Date;
   updatedAt: Date;
+}
+
+// Pricing plan type representing a pricing plan
+export interface PricingPlan {
+  title: string;
+  price: number;
+  features: { text: string; tooltip: string }[];
 }
