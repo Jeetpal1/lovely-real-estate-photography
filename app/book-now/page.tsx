@@ -1,4 +1,4 @@
-// app/bookings/page.tsx
+// app/book-now/page.tsx
 "use client";
 
 import BookingForm from "../components/BookingForm";

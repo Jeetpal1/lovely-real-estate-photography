@@ -13,3 +13,15 @@ export const bookingState = atom<Booking[]>({
   key: 'bookingState',
   default: [],
 });
+
+
+export interface PricingPlan {
+  title: string;
+  price: number;
+  features: { text: string; tooltip: string }[];
+}
+
+export const selectedPricingPlanState = atom<PricingPlan | null>({
+  key: 'selectedPricingPlanState',
+  default: null,
+});

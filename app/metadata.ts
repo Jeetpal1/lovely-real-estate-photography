@@ -1,6 +1,6 @@
 // app/metadata.ts
 export const metadata = {
-  title: "Best Real Estate Photography in Winnipeg | Lovely Real Estate Photography",
+  title: "Lovely Real Estate Photography | Best Real Estate Photography in Winnipeg",
   description:
     "Lovely Real Estate Photography is the leading provider of real estate photography services in Winnipeg. We specialize in high-quality photos, 3D Matterport tours, drone photography, and video walkthroughs to showcase properties at their absolute best. Our experienced team and state-of-the-art equipment ensure your listings stand out in the competitive market. Trusted by top real estate agents, homeowners, and property managers, our services capture the true essence of your properties. Book your session today at realestate.lovelyphotography.ca.",
   openGraph: {

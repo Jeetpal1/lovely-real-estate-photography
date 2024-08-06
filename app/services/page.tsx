@@ -1,3 +1,5 @@
+// app/services/page.tsx
+
 "use client";
 
 import { Footer } from "../components/Footer";

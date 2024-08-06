@@ -17,6 +17,8 @@ import {
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const phoneNumber = "+14314582575"; // First phone number
+  const email = "lovelyphotographywinnipeg@gmail.com"; // Email address
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -34,7 +36,7 @@ export const Header = () => {
             alt="Logo"
           />
         </Link>
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={toggleMenu} className="">
             {isOpen ? (
               <HiXMark className="h-12 w-12" />
@@ -44,9 +46,9 @@ export const Header = () => {
           </button>
         </div>
         <nav
-          className={`md:flex items-center space-x-4 ${
+          className={`lg:flex items-center space-x-4 ${
             isOpen ? "block" : "hidden"
-          } md:block`}
+          } lg:block`}
         >
           <Link href="/about">
             <div className="flex items-center space-x-1 mx-2 cursor-pointer ">
@@ -85,15 +87,15 @@ export const Header = () => {
           >
             <FaInstagram className="h-5 w-5 mx-2 " />
           </Link>
-          <Link href="/book-now">
+          <Link legacyBehavior href={`tel:${phoneNumber}`}>
             <button className="bg-primary text-white px-4 py-2 rounded-full">
-              Book Now
+              Call Us
             </button>
           </Link>
         </nav>
       </div>
       {isOpen && (
-        <div className="md:hidden fixed inset-0 bg-white bg-opacity-95 flex flex-col items-center justify-center z-50">
+        <div className="lg:hidden fixed inset-0 bg-white bg-opacity-95 flex flex-col items-center justify-center z-50">
           <button
             onClick={toggleMenu}
             className="absolute top-9 right-4"
@@ -134,9 +136,9 @@ export const Header = () => {
               </div>
             </Link>
 
-            <Link href="/book-now">
+            <Link legacyBehavior href={`tel:${phoneNumber}`}>
               <button className="bg-primary text-white px-6 py-2 rounded-full mt-4">
-                Book Now
+                Call Us
               </button>
             </Link>
             <Link

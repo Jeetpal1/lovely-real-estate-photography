@@ -3,12 +3,12 @@ import { addDoc, collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { Booking } from '../../types';
 
-export const createBooking = async (booking: Booking) => {
+export const createBooking = async (booking: Omit<Booking, "id">) => {
   try {
-    const docRef = await addDoc(collection(db, 'bookings'), booking);
+    const docRef = await addDoc(collection(db, "bookings"), booking);
     return docRef.id;
   } catch (e) {
-    console.error('Error adding booking: ', e);
+    console.error("Error adding booking: ", e);
     throw e;
   }
 };

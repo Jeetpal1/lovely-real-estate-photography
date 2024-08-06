@@ -1,6 +1,10 @@
 // app/components/PricingSection.tsx
+
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { FaCheckCircle, FaInfoCircle } from "react-icons/fa";
+import { useRecoilState } from "recoil";
+import { PricingPlan, selectedPricingPlanState } from "../../state/atoms";
 import Tooltip from "./Tooltip";
 
 const pricingPlans = {
@@ -130,6 +134,15 @@ const PricingSection = () => {
   const [selectedTab, setSelectedTab] = useState<"under4000" | "over4000">(
     "under4000"
   );
+  const [selectedPricingPlan, setSelectedPricingPlan] = useRecoilState(
+    selectedPricingPlanState
+  );
+  const router = useRouter();
+
+  const handleBookNow = (plan: PricingPlan) => {
+    setSelectedPricingPlan(plan);
+    router.push("/book-now");
+  };
 
   return (
     <section className="py-16 bg-background">
@@ -142,16 +155,20 @@ const PricingSection = () => {
         </p>
         <div className="flex justify-center mb-8">
           <button
-            className={`bg-secondary  px-4 py-2 mx-2 rounded-full ${
-              selectedTab === "under4000" ? "bg-primary " : "text-white"
+            className={`bg-primary px-4 py-2 mx-2 rounded-full ${
+              selectedTab === "under4000"
+                ? "border-4 border-secondary text-secondary"
+                : "text-white"
             }`}
             onClick={() => setSelectedTab("under4000")}
           >
             Under 4000 sq.ft
           </button>
           <button
-            className={`bg-secondary text-black px-4 py-2 mx-2 rounded-full ${
-              selectedTab === "over4000" ? "bg-primary " : "text-white"
+            className={`bg-primary text-black px-4 py-2 mx-2 rounded-full ${
+              selectedTab === "over4000"
+                ? "border-4 border-secondary text-secondary"
+                : "text-white"
             }`}
             onClick={() => setSelectedTab("over4000")}
           >
@@ -183,7 +200,10 @@ const PricingSection = () => {
               <p className="text-center text-sm text-green-500 mb-4">
                 No upfront payment required
               </p>
-              <button className="bg-primary text-white w-full py-2 rounded-full mb-4">
+              <button
+                className="bg-primary text-white w-full py-2 rounded-full mb-4"
+                onClick={() => handleBookNow(plan)}
+              >
                 Book Now
               </button>
               <ul className="mt-4 space-y-2">

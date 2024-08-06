@@ -1,3 +1,5 @@
+// services/bookingsService.ts
+
 import { addDoc, collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { Booking } from '../types';

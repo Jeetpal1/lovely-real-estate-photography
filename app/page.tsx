@@ -19,7 +19,7 @@ export default function Home() {
         <HeroSection />
         <PricingSection />
         <ExperienceSection />
-        <div className="container mx-auto px-4 py-8">
+        {/* <div className="container mx-auto px-4 py-8">
           {user ? (
             <p className="text-text mt-4">
               Welcome back, {user.displayName || user.email}!
@@ -29,7 +29,7 @@ export default function Home() {
               Please log in to see your bookings.
             </p>
           )}
-        </div>
+        </div> */}
       </main>
       <Footer />
     </div>

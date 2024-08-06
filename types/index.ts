@@ -8,27 +8,39 @@ export interface User {
   phoneNumber?: string;
 }
 
+export interface PaymentDetails {
+  cardNumber: string;
+  expiryDate: string;
+  cvc: string;
+  zip: string;
+}
+
 // Property details type
 export interface PropertyDetails {
   address: string;
   unitNumber?: string;
   propertyType: string;
-  squareFootage?: number;
-  parking?: boolean;
-  lockbox?: string;
-  realtor?: boolean;
-  specialInstructions?: string;
+  over4000: boolean;
+  visitorParking: boolean;
+  lockbox: string;
+  realtor: boolean;
+  referral: string;
+  specialInstructions: string;
 }
 
-// Booking type representing a booking made by a user
 export interface Booking {
   id: string;
   userId: string;
   userEmail: string;
   propertyDetails: PropertyDetails;
+  firstName: string;
+  lastName: string;
+  phone: string;
+  email: string;
+  paymentDetails: PaymentDetails;
   timeSlot: Date;
-  status: 'pending' | 'confirmed' | 'completed';
-  paymentStatus: 'unpaid' | 'paid';
+  status: "pending" | "confirmed" | "completed";
+  paymentStatus: "unpaid" | "paid";
   createdAt: Date;
   updatedAt: Date;
 }
