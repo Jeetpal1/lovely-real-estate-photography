@@ -36,7 +36,7 @@ const ExperienceSection = () => {
             <ReactCompareImage leftImage={before4} rightImage={after4} />
           </div>
         </div>
-        <p className="text-lg mt-8">
+        {/* <p className="text-lg mt-8">
           Want to see more of our work?{" "}
           <a
             href="/portfolio"
@@ -44,7 +44,7 @@ const ExperienceSection = () => {
           >
             Click here
           </a>
-        </p>
+        </p> */}
       </div>
     </section>
   );
