@@ -22,7 +22,7 @@ export default function HeroSection() {
           tours – all in one seamless appointment.
         </p>
         <Link
-          href="/bookings"
+          href="/book-now"
           className="bg-primary text-white px-8 py-4 rounded-full text-lg md:text-xl font-bold"
         >
           Book Your Session Today
