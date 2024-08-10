@@ -10,10 +10,7 @@ export const pricingPlans = {
             text: "Up to 30 Stunning Photos (Professionally Enhanced)",
             tooltip: "",
           },
-          {
-            text: "Dedicated Property Website to Showcase Listings",
-            tooltip: "",
-          },
+         
           {
             text: "NEW: Unlimited Object Removal (Basic)",
             tooltip:
@@ -34,24 +31,19 @@ export const pricingPlans = {
         features: [
           { text: "Unlimited Photos (Professionally Enhanced)", tooltip: "" },
           { text: "Cinematic Video Tours to Captivate Buyers", tooltip: "" },
-          {
-            text: "Matterport 3D Virtual Tour (1-Month Free)",
-            tooltip:
-              "*3D Virtual Tours include a 30-day free hosting period. Upon completion of the trial, each 3D Virtual Tour is hosted for $9.99/month plus applicable taxes and fees. You may cancel at any time. For inquiries, please contact billing@lovelyrealestatephotography.com.",
-          },
+        
           {
             text: "NEW: Unlimited Object Removal (Basic)",
             tooltip:
               "Say goodbye to unwanted objects in your photos. Perfect for minor clutter like garbage cans. For more complex removals, additional charges apply.",
           },
-          { text: "Dedicated Property Website", tooltip: "" },
-          { text: "Virtual Feature Sheets for Detailed Listings", tooltip: "" },
           {
             text: "Unlimited Revisions",
             tooltip:
               "Submit as many change requests as you'd like until you're satisfied with the content. See terms of use for details.",
           },
           { text: "12-Hour Turnaround for Faster Results", tooltip: "" },
+          { text: "Premium Twilight Photo", tooltip: "" },
           { text: "Free Graphic Designer for Superior Quality", tooltip: "" },
         ],
       },
@@ -65,20 +57,19 @@ export const pricingPlans = {
           {
             text: "Matterport 3D Virtual Tour (1-Month Free)",
             tooltip:
-              "*3D Virtual Tours include a 30-day free hosting period. Upon completion of the trial, each 3D Virtual Tour is hosted for $9.99/month plus applicable taxes and fees. You may cancel at any time. For inquiries, please contact billing@lovelyrealestatephotography.com.",
+              "*3D Virtual Tours include a 30-day free hosting period. Upon completion of the trial, each 3D Virtual Tour is hosted for $9.99/month plus applicable taxes and fees. You may cancel at any time. For inquiries, please contact lovelyrealestatephotography@gmail.com.",
           },
           {
             text: "NEW: Unlimited Object Removal (Basic)",
             tooltip:
               "Say goodbye to unwanted objects in your photos. Perfect for minor clutter like garbage cans. For more complex removals, additional charges apply.",
           },
-          { text: "Dedicated Property Website", tooltip: "" },
-          { text: "Detailed Floorplans with Dimensions", tooltip: "" },
+          // { text: "Detailed Floorplans with Dimensions", tooltip: "" },
           {
-            text: "Premium Twilight Photos for Breathtaking Visuals",
+            text: "Premium Twilight Photo for Breathtaking Visuals",
             tooltip: "",
           },
-          { text: "Virtual Feature Sheets", tooltip: "" },
+          // { text: "Virtual Feature Sheets", tooltip: "" },
           {
             text: "Unlimited Revisions",
             tooltip:
@@ -100,15 +91,15 @@ export const pricingPlans = {
           {
             text: "Matterport 3D Virtual Tour (1-Month Free)",
             tooltip:
-              "*3D Virtual Tours include a 30-day free hosting period. Upon completion of the trial, each 3D Virtual Tour is hosted for $9.99/month plus applicable taxes and fees. You may cancel at any time. For inquiries, please contact billing@lovelyrealestatephotography.com.",
+              "*3D Virtual Tours include a 30-day free hosting period. Upon completion of the trial, each 3D Virtual Tour is hosted for $9.99/month plus applicable taxes and fees. You may cancel at any time. For inquiries, please contact lovelyrealestatephotography@gmail.com.",
           },
           {
             text: "NEW: Unlimited Object Removal (Basic)",
             tooltip:
               "Say goodbye to unwanted objects in your photos. Perfect for minor clutter like garbage cans. For more complex removals, additional charges apply.",
           },
-          { text: "Dedicated Property Website", tooltip: "" },
-          { text: "Detailed Floorplans with Dimensions", tooltip: "" },
+          // { text: "Dedicated Property Website", tooltip: "" },
+          // { text: "Detailed Floorplans with Dimensions", tooltip: "" },
           { text: "Premium Twilight Photos", tooltip: "" },
           { text: "Virtual Feature Sheets", tooltip: "" },
           {
