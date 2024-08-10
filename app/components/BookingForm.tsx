@@ -94,15 +94,26 @@ const BookingForm = () => {
     e:
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLSelectElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
-    const { name, value, type } = e.target;
+    const { name, value } = e.target;
 
-    if (e.target instanceof HTMLInputElement && type === "checkbox") {
-      setFormData((prevData) => ({
-        ...prevData,
-        [name]: (e.target as HTMLInputElement).checked,
-      }));
-    } else {
+    if (e.target instanceof HTMLInputElement) {
+      if (e.target.type === "checkbox") {
+        setFormData((prevData) => ({
+          ...prevData,
+          [name]: (e.target as HTMLInputElement).checked,
+        }));
+      } else {
+        setFormData((prevData) => ({
+          ...prevData,
+          [name]: value,
+        }));
+      }
+    } else if (
+      e.target instanceof HTMLSelectElement ||
+      e.target instanceof HTMLTextAreaElement
+    ) {
       setFormData((prevData) => ({
         ...prevData,
         [name]: value,
