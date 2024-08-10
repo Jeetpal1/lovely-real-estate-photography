@@ -31,6 +31,7 @@ export const pricingPlans = {
         features: [
           { text: "Unlimited Photos (Professionally Enhanced)", tooltip: "" },
           { text: "Cinematic Video Tours to Captivate Buyers", tooltip: "" },
+          { text: "4K Drone, Aerial Photos (Limited time photos until September 1st)", tooltip: "" },
         
           {
             text: "NEW: Unlimited Object Removal (Basic)",
@@ -53,7 +54,8 @@ export const pricingPlans = {
         popular: true,
         features: [
           { text: "Unlimited Photos (Professionally Enhanced)", tooltip: "" },
-          { text: "Cinematic Video Tours", tooltip: "" },
+          { text: "Premium Cinematic Video (Realtor Intro & Outro in Video )", tooltip: "" },
+          { text: "4K Drone, Aerial Photos and Video Clips", tooltip: "" },
           {
             text: "Matterport 3D Virtual Tour (1-Month Free)",
             tooltip:
