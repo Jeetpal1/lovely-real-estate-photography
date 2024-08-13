@@ -23,7 +23,7 @@ export default function Services() {
   return (
     <div className="bg-background min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow container mx-auto px-4 py-8">
+      <main className="flex-grow  mx-auto px-4 py-8">
         <h1 className="text-primary text-4xl font-bold">Our Services</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
           {services.map((service, index) => (

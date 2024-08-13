@@ -167,6 +167,19 @@ const BookingForm = () => {
       onSubmit={handleSubmit}
       className="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto"
     >
+      {step > 1 && (
+        <div className="mb-4 p-4 bg-gray-100 rounded">
+          <h3 className="text-lg font-semibold mb-2">Your Selections</h3>
+          {selectedPackage && <p>Package: {selectedPackage}</p>}
+          {selectedDate && (
+            <p>
+              Date: {selectedDate.toDateString()}
+              {selectedTimeSlot && ` at ${selectedTimeSlot}`}
+            </p>
+          )}
+        </div>
+      )}
+
       {step === 1 && (
         <>
           <h2 className="text-2xl font-bold mb-4">Select a Package</h2>

@@ -68,7 +68,7 @@ export const Header = () => {
               <span>Contact</span>
             </div>
           </Link>
-          <Link href="/bookings">
+          <Link href="/book-now">
             <div className="flex items-center space-x-1 mx-2 cursor-pointer ">
               <HiCalendarDays className="h-5 w-5" />
               <span>Bookings</span>
@@ -123,7 +123,7 @@ export const Header = () => {
                 <span className="text-xl">Contact</span>
               </div>
             </Link>
-            <Link href="/bookings">
+            <Link href="/book-now">
               <div className="flex items-center space-x-1 mx-2 cursor-pointer ">
                 <HiCalendarDays className="h-6 w-6" />
                 <span className="text-xl">Bookings</span>

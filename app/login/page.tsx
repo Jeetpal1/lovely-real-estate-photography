@@ -24,7 +24,7 @@ export default function Login() {
   return (
     <div className="bg-background min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow container mx-auto px-4 py-8">
+      <main className="flex-grow  mx-auto px-4 py-8">
         <h1 className="text-primary text-4xl font-bold">Login</h1>
         {user ? (
           <p className="text-text mt-4">

@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="bg-background min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow container mx-auto px-4 py-8">
+      <main className="flex-grow mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold mb-8">
           Privacy Policy & Terms of Use
         </h1>
