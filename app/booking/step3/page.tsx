@@ -3,6 +3,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { toast } from "react-toastify";
 import BookingLayout from "../layout";
 
 export default function Step3() {
@@ -41,17 +42,18 @@ export default function Step3() {
 
   const handleNext = () => {
     if (formData.address && formData.propertyType) {
+      toast.success("Property details saved!");
       router.push("/booking/step4");
     } else {
-      alert("Please fill in the required fields");
+      toast.error("Please fill in the required fields");
     }
   };
 
   return (
-    <BookingLayout>
-      <h2 className="text-xl font-bold mb-4">Step 3: Property Details</h2>
+    <>
+      <h2 className="text-2xl font-bold mb-4">Step 3: Property Details</h2>
       <div className="mb-4">
-        <label className="block text-gray-700">Address</label>
+        <label className="block text-text mb-2">Address</label>
         <input
           type="text"
           name="address"
@@ -62,7 +64,7 @@ export default function Step3() {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">Unit Number (Optional)</label>
+        <label className="block text-text mb-2">Unit Number (Optional)</label>
         <input
           type="text"
           name="unitNumber"
@@ -72,7 +74,7 @@ export default function Step3() {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">Property Type</label>
+        <label className="block text-text mb-2">Property Type</label>
         <select
           name="propertyType"
           value={formData.propertyType}
@@ -93,7 +95,7 @@ export default function Step3() {
         </select>
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">
+        <label className="block text-text mb-2">
           Is the property over 4000 sq.ft?
         </label>
         <input
@@ -106,7 +108,7 @@ export default function Step3() {
         Yes
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">Lockbox Code</label>
+        <label className="block text-text mb-2">Lockbox Code</label>
         <input
           type="text"
           name="lockbox"
@@ -116,7 +118,7 @@ export default function Step3() {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">Are you a Realtor?</label>
+        <label className="block text-text mb-2">Are you a Realtor?</label>
         <input
           type="checkbox"
           name="realtor"
@@ -127,7 +129,7 @@ export default function Step3() {
         Yes
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">
+        <label className="block text-text mb-2">
           How did you hear about us?
         </label>
         <input
@@ -139,7 +141,7 @@ export default function Step3() {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">Special Instructions</label>
+        <label className="block text-text mb-2">Special Instructions</label>
         <textarea
           name="specialInstructions"
           value={formData.specialInstructions}
@@ -156,11 +158,11 @@ export default function Step3() {
         </button>
         <button
           onClick={handleNext}
-          className="bg-blue-500 text-white px-4 py-2 rounded"
+          className="bg-primary text-white px-4 py-2 rounded"
         >
           Next
         </button>
       </div>
-    </BookingLayout>
+    </>
   );
 }

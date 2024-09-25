@@ -1,9 +1,9 @@
 // /app/booking/step4/page.tsx
-
 "use client";
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { toast } from "react-toastify";
 import BookingLayout from "../layout";
 
 export default function Step4() {
@@ -30,17 +30,18 @@ export default function Step4() {
       paymentData.cvc &&
       paymentData.zip
     ) {
+      toast.success("Payment details saved!");
       router.push("/booking/confirmation");
     } else {
-      alert("Please fill in all the payment details");
+      toast.error("Please fill in all the payment details");
     }
   };
 
   return (
-    <BookingLayout>
-      <h2 className="text-xl font-bold mb-4">Step 4: Payment Details</h2>
+    <>
+      <h2 className="text-2xl font-bold mb-4">Step 4: Payment Details</h2>
       <div className="mb-4">
-        <label className="block text-gray-700">Card Number</label>
+        <label className="block text-text mb-2">Card Number</label>
         <input
           type="text"
           name="cardNumber"
@@ -51,7 +52,7 @@ export default function Step4() {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">Expiry Date</label>
+        <label className="block text-text mb-2">Expiry Date</label>
         <input
           type="text"
           name="expiryDate"
@@ -62,7 +63,7 @@ export default function Step4() {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">CVC</label>
+        <label className="block text-text mb-2">CVC</label>
         <input
           type="text"
           name="cvc"
@@ -73,7 +74,7 @@ export default function Step4() {
         />
       </div>
       <div className="mb-4">
-        <label className="block text-gray-700">ZIP Code</label>
+        <label className="block text-text mb-2">ZIP Code</label>
         <input
           type="text"
           name="zip"
@@ -92,11 +93,11 @@ export default function Step4() {
         </button>
         <button
           onClick={handleNext}
-          className="bg-blue-500 text-white px-4 py-2 rounded"
+          className="bg-primary text-white px-4 py-2 rounded"
         >
           Next
         </button>
       </div>
-    </BookingLayout>
+    </>
   );
 }

@@ -5,6 +5,7 @@
 
 import { Inter } from "next/font/google";
 import Head from "next/head";
+import { ToastContainer } from "react-toastify";
 import { RecoilRoot } from "recoil";
 import { AuthProvider } from "../context/AuthContext";
 import { metadata } from "./metadata";
@@ -45,9 +46,10 @@ export default function RootLayout({
         />
         <meta name="keywords" content={metadata.keywords} />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} text-xs lg:text-base `}>
         <RecoilRoot>
           <AuthProvider>{children}</AuthProvider>
+          <ToastContainer />
         </RecoilRoot>
       </body>
     </html>

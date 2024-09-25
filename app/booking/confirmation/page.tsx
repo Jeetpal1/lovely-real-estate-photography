@@ -1,5 +1,8 @@
 // /app/booking/confirmation/page.tsx
+"use client";
+
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 import { useRecoilValue } from "recoil";
 import {
   selectedDateState,
@@ -29,15 +32,16 @@ export default function Confirmation() {
         status: "pending",
       };
       addBooking(newBooking);
+      toast.success("Booking confirmed!");
       router.push("/booking/thank-you");
     } else {
-      alert("Please make sure all details are filled in correctly.");
+      toast.error("Please make sure all details are filled in correctly.");
     }
   };
 
   return (
-    <BookingLayout>
-      <h2 className="text-xl font-bold mb-4">Confirmation</h2>
+    <>
+      <h2 className="text-2xl font-bold mb-4">Confirmation</h2>
       <div className="mb-4">
         <p>
           <strong>Package:</strong> {selectedPackage?.title}
@@ -55,6 +59,6 @@ export default function Confirmation() {
       >
         Confirm Booking
       </button>
-    </BookingLayout>
+    </>
   );
 }
