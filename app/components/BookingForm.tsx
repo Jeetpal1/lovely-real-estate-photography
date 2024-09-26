@@ -155,7 +155,7 @@ const BookingForm = () => {
         paymentStatus: "unpaid",
         createdAt: new Date(),
         updatedAt: new Date(),
-      } as Omit<Booking, "id">);
+      });
       console.log("Booking created with ID:", bookingId);
     } catch (error) {
       console.error("Error creating booking:", error);
