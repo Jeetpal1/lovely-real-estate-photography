@@ -32,18 +32,20 @@ export interface PropertyDetails {
 export interface Booking {
   id?: string;
   userId: string;
-  userEmail: string;
-  propertyDetails: PropertyDetails;
-  firstName: string;
-  lastName: string;
-  phone: string;
-  email: string;
-  paymentDetails: PaymentDetails;
+  // userEmail: string;
+  // propertyDetails: PropertyDetails;
+  // firstName: string;
+  // lastName: string;
+  // phone: string;
+  // email: string;
+  package: string;
+  date: Date;
+  // paymentDetails: PaymentDetails;
   timeSlot: string; // Changed from Date to string
-  status: "pending" | "confirmed" | "completed";
-  paymentStatus: "unpaid" | "paid";
-  createdAt: Date;
-  updatedAt: Date;
+  status: string;
+  // paymentStatus: "unpaid" | "paid";
+  // createdAt: Date;
+  // updatedAt: Date;
 }
 
 // Pricing plan type representing a pricing plan

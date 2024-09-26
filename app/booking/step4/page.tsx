@@ -44,7 +44,7 @@ export default function Step4() {
         <label className="block text-text mb-2">Card Number</label>
         <input
           type="text"
-          name="cardNumber"
+          title="cardNumber"
           value={paymentData.cardNumber}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"
@@ -55,7 +55,7 @@ export default function Step4() {
         <label className="block text-text mb-2">Expiry Date</label>
         <input
           type="text"
-          name="expiryDate"
+          title="expiryDate"
           value={paymentData.expiryDate}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"
@@ -66,7 +66,7 @@ export default function Step4() {
         <label className="block text-text mb-2">CVC</label>
         <input
           type="text"
-          name="cvc"
+          title="cvc"
           value={paymentData.cvc}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"
@@ -77,7 +77,7 @@ export default function Step4() {
         <label className="block text-text mb-2">ZIP Code</label>
         <input
           type="text"
-          name="zip"
+          title="zip"
           value={paymentData.zip}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"

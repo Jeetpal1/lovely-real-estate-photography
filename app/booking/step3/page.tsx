@@ -56,7 +56,7 @@ export default function Step3() {
         <label className="block text-text mb-2">Address</label>
         <input
           type="text"
-          name="address"
+          title="address"
           value={formData.address}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"
@@ -67,7 +67,7 @@ export default function Step3() {
         <label className="block text-text mb-2">Unit Number (Optional)</label>
         <input
           type="text"
-          name="unitNumber"
+          title="unitNumber"
           value={formData.unitNumber}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"
@@ -76,7 +76,7 @@ export default function Step3() {
       <div className="mb-4">
         <label className="block text-text mb-2">Property Type</label>
         <select
-          name="propertyType"
+          title="propertyType"
           value={formData.propertyType}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"
@@ -100,7 +100,7 @@ export default function Step3() {
         </label>
         <input
           type="checkbox"
-          name="over4000"
+          title="over4000"
           checked={formData.over4000}
           onChange={handleChange}
           className="mr-2"
@@ -111,7 +111,7 @@ export default function Step3() {
         <label className="block text-text mb-2">Lockbox Code</label>
         <input
           type="text"
-          name="lockbox"
+          title="lockbox"
           value={formData.lockbox}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"
@@ -121,7 +121,7 @@ export default function Step3() {
         <label className="block text-text mb-2">Are you a Realtor?</label>
         <input
           type="checkbox"
-          name="realtor"
+          title="realtor"
           checked={formData.realtor}
           onChange={handleChange}
           className="mr-2"
@@ -134,7 +134,7 @@ export default function Step3() {
         </label>
         <input
           type="text"
-          name="referral"
+          title="referral"
           value={formData.referral}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"
@@ -143,7 +143,7 @@ export default function Step3() {
       <div className="mb-4">
         <label className="block text-text mb-2">Special Instructions</label>
         <textarea
-          name="specialInstructions"
+          title="specialInstructions"
           value={formData.specialInstructions}
           onChange={handleChange}
           className="w-full px-3 py-2 border rounded"
