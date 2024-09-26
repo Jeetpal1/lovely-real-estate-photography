@@ -3,7 +3,7 @@ import { addDoc, collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { Booking } from '../types';
 
-export const createBooking = async (booking: Omit<Booking, "id">) => {
+export const createBooking = async (booking: Omit<any, "id">) => {
   try {
     const response = await fetch('/api/bookings', {
       method: 'POST',
