@@ -91,7 +91,7 @@ export const pricingPlans = {
           { text: "Unlimited Photos (Professionally Enhanced)", tooltip: "" },
           { text: "Cinematic Video Tours", tooltip: "" },
           {
-            text: "Matterport 3D Virtual Tour (1-Month Free)",
+            text: "Matterport 3D Virtual Tour (1-Month Free) (Add-on $50)",
             tooltip:
               "*3D Virtual Tours include a 30-day free hosting period. Upon completion of the trial, each 3D Virtual Tour is hosted for $9.99/month plus applicable taxes and fees. You may cancel at any time. For inquiries, please contact lovelyrealestatephotography@gmail.com.",
           },
