@@ -31,7 +31,7 @@ export const pricingPlans = {
         features: [
           { text: "Unlimited Photos (Professionally Enhanced)", tooltip: "" },
           { text: "Cinematic Video Tours to Captivate Buyers", tooltip: "" },
-          { text: "4K Drone, Aerial Photos (Limited time photos until September 1st)", tooltip: "" },
+          { text: "4K Drone, Aerial", tooltip: "" },
         
           {
             text: "NEW: Unlimited Object Removal (Basic)",
@@ -44,7 +44,7 @@ export const pricingPlans = {
               "Submit as many change requests as you'd like until you're satisfied with the content. See terms of use for details.",
           },
           { text: "12-Hour Turnaround for Faster Results", tooltip: "" },
-          { text: "Premium Twilight Photo", tooltip: "" },
+          { text: "Premium Twilight Photo (Add On)", tooltip: "" },
           { text: "Free Graphic Designer for Superior Quality", tooltip: "" },
         ],
       },
