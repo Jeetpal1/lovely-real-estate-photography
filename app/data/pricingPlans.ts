@@ -44,7 +44,7 @@ export const pricingPlans = {
               "Submit as many change requests as you'd like until you're satisfied with the content. See terms of use for details.",
           },
           { text: "12-Hour Turnaround for Faster Results", tooltip: "" },
-          { text: "Premium Twilight Photo (Add On)", tooltip: "" },
+          { text: "Premium Twilight Photo (Add On $20)", tooltip: "" },
           { text: "Free Graphic Designer for Superior Quality", tooltip: "" },
         ],
       },
