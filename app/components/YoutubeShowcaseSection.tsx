@@ -8,16 +8,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const VideoSwiper = () => {
   const videos = [
     {
-      id: "BYnIsl-RBzY",
-      url: "https://www.youtube.com/embed/BYnIsl-RBzY",
-    },
-    {
       id: "bBzpha0ZV_s",
       url: "https://www.youtube.com/embed/bBzpha0ZV_s",
     },
     {
       id: "v_pGe9_2AAc",
       url: "https://www.youtube.com/embed/v_pGe9_2AAc",
+    },
+    {
+      id: "BYnIsl-RBzY",
+      url: "https://www.youtube.com/embed/BYnIsl-RBzY",
     },
     {
       id: "j_Kv8-ALVmA",

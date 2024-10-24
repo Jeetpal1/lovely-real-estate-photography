@@ -68,12 +68,12 @@ export const Header = () => {
               <span>Contact</span>
             </div>
           </Link>
-          <Link href="/book-now">
+          {/* <Link href="/book-now">
             <div className="flex items-center space-x-1 mx-2 cursor-pointer ">
               <HiCalendarDays className="h-5 w-5" />
               <span>Bookings</span>
             </div>
-          </Link>
+          </Link> */}
           <Link href="/login">
             <div className="flex items-center space-x-1 mx-2 cursor-pointer ">
               <HiArrowRightOnRectangle className="h-5 w-5" />
