@@ -23,12 +23,20 @@ export default function HeroSection() {
           Realtors using professional media sell homes 32% faster and see a 47%
           increase in buyer interest.
         </p>
-        <Link
-          href="tel:+12048876797"
-          className="bg-primary text-white px-8 py-4 rounded-full text-lg md:text-xl font-bold"
-        >
-          Call Now to Discuss Your Project
-        </Link>
+        <div className="flex justify-center space-x-4">
+          <Link
+            href="tel:+12048876797"
+            className="bg-primary text-white px-8 py-4 rounded-full text-lg md:text-xl font-bold"
+          >
+            Call Now To Book
+          </Link>
+          <Link
+            href="sms:+12048876797?body=Hi, I'd like to book a listing for real estate media."
+            className="bg-secondary text-white px-8 py-4 rounded-full text-lg md:text-xl font-bold"
+          >
+            Message Us
+          </Link>
+        </div>
       </div>
     </section>
   );

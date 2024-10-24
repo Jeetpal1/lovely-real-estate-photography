@@ -7,7 +7,8 @@ import ExperienceSection from "./components/ExperienceSection";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import PricingSection from "./components/PricingSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import YoutubeShowcaseSection from "./components/YoutubeShowcaseSection";
 
 export default function Home() {
   const user = useRecoilValue(userState);
@@ -17,19 +18,9 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <HeroSection />
-        <PricingSection />
+        <YoutubeShowcaseSection />
         <ExperienceSection />
-        {/* <div className="container mx-auto px-4 py-8">
-          {user ? (
-            <p className="text-text mt-4">
-              Welcome back, {user.displayName || user.email}!
-            </p>
-          ) : (
-            <p className="text-text mt-4">
-              Please log in to see your bookings.
-            </p>
-          )}
-        </div> */}
+        <TestimonialsSection />
       </main>
       <Footer />
     </div>
