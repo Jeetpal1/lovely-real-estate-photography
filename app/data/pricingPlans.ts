@@ -7,7 +7,7 @@ export const pricingPlans = {
         price: 95,
         features: [
           {
-            text: "Up to 30 Stunning Photos (Professionally Enhanced)",
+            text: "Up to 35 Stunning Photos (Professionally Enhanced)",
             tooltip: "",
           },
          
@@ -16,11 +16,7 @@ export const pricingPlans = {
             tooltip:
               "Say goodbye to unwanted objects in your photos. Perfect for minor clutter like garbage cans. For more complex removals, additional charges apply.",
           },
-          {
-            text: "Unlimited Revisions",
-            tooltip:
-              "Submit as many change requests as you'd like until you're satisfied with the content. See terms of use for details.",
-          },
+
           { text: "24-Hour Turnaround for Quick Results", tooltip: "" },
           { text: "Free Graphic Designer for a Polished Finish", tooltip: "" },
         ],
@@ -31,20 +27,14 @@ export const pricingPlans = {
         features: [
           { text: "Unlimited Photos (Professionally Enhanced)", tooltip: "" },
           { text: "Cinematic Video Tours to Captivate Buyers", tooltip: "" },
-          { text: "4K Drone, Aerial", tooltip: "" },
+          { text: "4K Drone, Aerial (Promotionally Free On the First Booking)", tooltip: "" },
         
           {
             text: "NEW: Unlimited Object Removal (Basic)",
             tooltip:
               "Say goodbye to unwanted objects in your photos. Perfect for minor clutter like garbage cans. For more complex removals, additional charges apply.",
           },
-          {
-            text: "Unlimited Revisions",
-            tooltip:
-              "Submit as many change requests as you'd like until you're satisfied with the content. See terms of use for details.",
-          },
           { text: "12-Hour Turnaround for Faster Results", tooltip: "" },
-          { text: "Premium Twilight Photo (Add On $20)", tooltip: "" },
           { text: "Free Graphic Designer for Superior Quality", tooltip: "" },
         ],
       },
@@ -55,9 +45,9 @@ export const pricingPlans = {
         features: [
           { text: "Unlimited Photos (Professionally Enhanced)", tooltip: "" },
           { text: "Premium Cinematic Video (Realtor Intro & Outro in Video )", tooltip: "" },
-          { text: "4K Drone, Aerial Photos and Video Clips", tooltip: "" },
+          { text: "4K Drone, Aerial Photos and Video Clips Edited in the Video Walkthrough", tooltip: "" },
           {
-            text: "Matterport 3D Virtual Tour ( Add on $80 ) ( 1-Month hosting Free )",
+            text: "Matterport 3D Virtual Tour ( Add on $99 ) ( 1-Month hosting Free )",
             tooltip:
               "*3D Virtual Tours include a 30-day free hosting period. Upon completion of the trial, each 3D Virtual Tour is hosted for $9.99/month plus applicable taxes and fees. You may cancel at any time. For inquiries, please contact lovelyrealestatephotography@gmail.com.",
           },
@@ -72,11 +62,7 @@ export const pricingPlans = {
             tooltip: "",
           },
           // { text: "Virtual Feature Sheets", tooltip: "" },
-          {
-            text: "Unlimited Revisions",
-            tooltip:
-              "Submit as many change requests as you'd like until you're satisfied with the content. See terms of use for details.",
-          },
+
           { text: "12-Hour Turnaround", tooltip: "" },
           { text: "Free Graphic Designer", tooltip: "" },
         ],
@@ -91,7 +77,7 @@ export const pricingPlans = {
           { text: "Unlimited Photos (Professionally Enhanced)", tooltip: "" },
           { text: "Cinematic Video Tours", tooltip: "" },
           {
-            text: "Matterport 3D Virtual Tour (1-Month Free) (Add-on $50)",
+            text: "Matterport 3D Virtual Tour (Add-On 150) (1-Month Free)",
             tooltip:
               "*3D Virtual Tours include a 30-day free hosting period. Upon completion of the trial, each 3D Virtual Tour is hosted for $9.99/month plus applicable taxes and fees. You may cancel at any time. For inquiries, please contact lovelyrealestatephotography@gmail.com.",
           },
