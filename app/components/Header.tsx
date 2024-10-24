@@ -26,12 +26,12 @@ export const Header = () => {
 
   return (
     <header className="py-4 overflow-hidden bg-white">
-      <div className="container mx-auto flex justify-between items-center h-24 px-4">
+      <div className="container mx-auto flex justify-between items-center h-24 pb-4">
         <Link href="/" className="relative h-24 w-48 overflow-hidden">
           <Image
-            src="/images/header-logo.svg"
-            className="absolute top-0 left-0 h-40 w-56 z-[60]"
-            width={208}
+            src="/images/lovely-media-logo.png"
+            className="absolute top-0 left-0 h-30 w-38 z-[60]"
+            width={120}
             height={52}
             alt="Logo"
           />
@@ -46,7 +46,7 @@ export const Header = () => {
           </button>
         </div>
         <nav
-          className={`lg:flex items-center space-x-4 ${
+          className={`lg:flex items-center pt-4 space-x-4 ${
             isOpen ? "block" : "hidden"
           } lg:block`}
         >

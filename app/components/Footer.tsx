@@ -14,6 +14,19 @@ export const Footer = () => {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
       <div className="container mx-auto text-center py-5">
+        <p className="text-lg text-center  mt-6">
+          Ready to elevate your listings and grow your real estate business?
+          Call us today at{" "}
+          <a href="tel:+12048876797" className="underline ">
+            +1 204-887-6797
+          </a>{" "}
+          or{" "}
+          <a href="mailto:info@lovelymedia.ca" className="underline ">
+            email us
+          </a>{" "}
+          for more details.
+        </p>
+
         <p>
           &copy; {new Date().getFullYear()} Lovely Real Estate Photography. All
           rights reserved.{" "}

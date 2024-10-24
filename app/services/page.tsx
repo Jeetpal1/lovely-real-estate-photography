@@ -10,32 +10,32 @@ const services = [
   {
     title: "Real Estate Photography",
     description:
-      "Capture every angle and feature with our expert photography services, ensuring your listings stand out in a crowded market.",
+      "High-quality, stunning images that capture the full essence of every property. Stand out in the competitive Winnipeg market with professionally enhanced photos that increase buyer engagement and make your listings irresistible.",
   },
   {
     title: "3D Matterport Tours",
     description:
-      "Offer potential buyers an immersive experience with our state-of-the-art 3D Matterport tours, providing a comprehensive view of the property.",
+      "Offer potential buyers an immersive, next-level experience with 3D Matterport tours. Make virtual walkthroughs available anytime, anywhere, and attract more out-of-town buyers with interactive, detailed property views.",
   },
   {
     title: "Drone Photography",
     description:
-      "Showcase your property's location and surroundings from a new perspective with stunning aerial shots that capture the entire scope.",
+      "Elevate your listings with breathtaking 4K drone shots. Capture aerial views of the property and its surroundings to give potential buyers a complete perspective that sets your listings apart from the competition.",
   },
   {
     title: "Cinematic Video Tours",
     description:
-      "Immerse your audience in a cinematic experience that highlights the best aspects of the property, making it easier for buyers to envision themselves in the space.",
+      "Engage buyers with captivating, cinematic property videos that highlight the best features. Create emotional connections that inspire faster decisions and leave a lasting impression on prospective buyers.",
   },
   {
     title: "Floor Plans",
     description:
-      "Provide potential buyers with detailed floor plans that give them a clear understanding of the property's layout, helping them make informed decisions.",
+      "Provide crystal-clear, professional floor plans to give potential buyers an accurate idea of a property’s layout. Help them envision how the space can fit their needs, driving quicker sales.",
   },
   {
     title: "Virtual Staging",
     description:
-      "Transform empty spaces into beautifully furnished rooms with our virtual staging services. Help buyers visualize the full potential of a property.",
+      "Turn empty spaces into beautiful, furnished rooms that feel lived-in and inviting. Virtual staging helps buyers visualize the potential of a property and boosts your chances of closing the sale.",
   },
   {
     title: "Social Media Content Accelerator",
@@ -49,7 +49,16 @@ export default function Services() {
     <div className="bg-background min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow max-w-7xl mx-auto px-4 py-8">
-        <h1 className="text-primary text-4xl font-bold">Our Services</h1>
+        <h1 className="text-primary text-4xl font-bold">
+          Maximize Your Listings with Our Expert Media Services
+        </h1>
+        <p className="text-lg text-gray-600 mt-4">
+          {`Professional real estate media services designed to help Winnipeg
+          realtors stand out, sell faster, and win more clients. From
+          photography to 3D tours, we've got everything you need to showcase
+          properties at their best.`}
+        </p>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
           {services.map((service, index) => (
             <ServiceCard
